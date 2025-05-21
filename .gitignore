@@ -1,174 +1,1288 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
+import time
 
-# C extensions
-*.so
+print("\n This is not a key finder\n This has a custom key system, and can only use it's preset key.\nOnly use capitals, lowercase, and spaces.\nDo not use more than one space between words")
+phrase_to_hide = str(input("\nphrase to encode / decode\n"))
+new_phrase = []
+space_count = 0
 
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
+print("\n 0 = encode\n above 0 = decode\n")
 
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
+decipher = int(input("decode?"))
+start_time = time.time()
+if(decipher == 1):
+  for letter in phrase_to_hide:
+    if(letter == " "):
+      if(space_count == 2):
+        space_count = 0
+        new_phrase.append(" ")
+      else:
+        space_count = space_count + 1
+        new_phrase.append(" ")
+      print("space found, space_count is now", space_count)
+    
+    else:
+      if(space_count == 0 and letter == "k"):
+        new_phrase.append("a")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "K"):
+        new_phrase.append("A")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "i"):
+        new_phrase.append("b")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "I"):
+        new_phrase.append("B")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "u"):
+        new_phrase.append("c")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "U"):
+        new_phrase.append("C")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "r"):
+        new_phrase.append("d")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "R"):
+        new_phrase.append("D")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "f"):
+        new_phrase.append("e")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "F"):
+        new_phrase.append("E")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "w"):
+        new_phrase.append("f")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "W"):
+        new_phrase.append("F")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "d"):
+        new_phrase.append("g")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "D"):
+        new_phrase.append("G")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "h"):
+        new_phrase.append("h")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "H"):
+        new_phrase.append("H")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "a"):
+        new_phrase.append("i")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "A"):
+        new_phrase.append("I")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "p"):
+        new_phrase.append("j")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "P"):
+        new_phrase.append("J")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "q"):
+        new_phrase.append("k")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "Q"):
+        new_phrase.append("K")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "s"):
+        new_phrase.append("l")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "S"):
+        new_phrase.append("L")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "v"):
+        new_phrase.append("m")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "V"):
+        new_phrase.append("M")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "o"):
+        new_phrase.append("n")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "O"):
+        new_phrase.append("N")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "j"):
+        new_phrase.append("o")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "J"):
+        new_phrase.append("O")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "e"):
+        new_phrase.append("p")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "E"):
+        new_phrase.append("P")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "n"):
+        new_phrase.append("q")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "N"):
+        new_phrase.append("Q")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "b"):
+        new_phrase.append("r")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "B"):
+        new_phrase.append("R")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "t"):
+        new_phrase.append("s")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "T"):
+        new_phrase.append("S")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "l"):
+        new_phrase.append("t")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "L"):
+        new_phrase.append("T")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "g"):
+        new_phrase.append("u")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "G"):
+        new_phrase.append("U")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "m"):
+        new_phrase.append("v")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "M"):
+        new_phrase.append("V")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "c"):
+        new_phrase.append("w")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "C"):
+        new_phrase.append("W")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "y"):
+        new_phrase.append("x")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "Y"):
+        new_phrase.append("X")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "z"):
+        new_phrase.append("y")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "Z"):
+        new_phrase.append("Y")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "x"):
+        new_phrase.append("z")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "X"):
+        new_phrase.append("Z")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "u"):
+        new_phrase.append("a")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "U"):
+        new_phrase.append("A")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "q"):
+        new_phrase.append("b")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "Q"):
+        new_phrase.append("B")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "n"):
+        new_phrase.append("c")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "N"):
+        new_phrase.append("C")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "v"):
+        new_phrase.append("d")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "V"):
+        new_phrase.append("D")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "x"):
+        new_phrase.append("e")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "X"):
+        new_phrase.append("E")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "d"):
+        new_phrase.append("f")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "D"):
+        new_phrase.append("F")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "f"):
+        new_phrase.append("g")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "F"):
+        new_phrase.append("G")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "w"):
+        new_phrase.append("h")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "W"):
+        new_phrase.append("H")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "m"):
+        new_phrase.append("i")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "M"):
+        new_phrase.append("I")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "i"):
+        new_phrase.append("j")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "I"):
+        new_phrase.append("J")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "t"):
+        new_phrase.append("k")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "T"):
+        new_phrase.append("K")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "r"):
+        new_phrase.append("l")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "R"):
+        new_phrase.append("L")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "z"):
+        new_phrase.append("m")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "Z"):
+        new_phrase.append("M")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "g"):
+        new_phrase.append("n")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "G"):
+        new_phrase.append("N")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "j"):
+        new_phrase.append("o")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "J"):
+        new_phrase.append("O")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "o"):
+        new_phrase.append("p")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "O"):
+        new_phrase.append("P")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "a"):
+        new_phrase.append("q")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "A"):
+        new_phrase.append("Q")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "l"):
+        new_phrase.append("r")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "L"):
+        new_phrase.append("R")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "h"):
+        new_phrase.append("s")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "H"):
+        new_phrase.append("S")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "b"):
+        new_phrase.append("t")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "B"):
+        new_phrase.append("T")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "y"):
+        new_phrase.append("u")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "Y"):
+        new_phrase.append("U")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "c"):
+        new_phrase.append("v")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "C"):
+        new_phrase.append("V")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "s"):
+        new_phrase.append("w")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "S"):
+        new_phrase.append("W")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "p"):
+        new_phrase.append("x")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "P"):
+        new_phrase.append("X")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "e"):
+        new_phrase.append("y")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "E"):
+        new_phrase.append("Y")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "k"):
+        new_phrase.append("z")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "K"):
+        new_phrase.append("Z")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "q"):
+        new_phrase.append("a")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "Q"):
+        new_phrase.append("A")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "r"):
+        new_phrase.append("b")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "R"):
+        new_phrase.append("B")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "u"):
+        new_phrase.append("c")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "U"):
+        new_phrase.append("C")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "t"):
+        new_phrase.append("d")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "T"):
+        new_phrase.append("D")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "o"):
+        new_phrase.append("e")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "O"):
+        new_phrase.append("E")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "v"):
+        new_phrase.append("f")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "V"):
+        new_phrase.append("F")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "a"):
+        new_phrase.append("g")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "A"):
+        new_phrase.append("G")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "j"):
+        new_phrase.append("h")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "J"):
+        new_phrase.append("H")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "c"):
+        new_phrase.append("i")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "C"):
+        new_phrase.append("I")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "p"):
+        new_phrase.append("j")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "P"):
+        new_phrase.append("J")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "z"):
+        new_phrase.append("k")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "Z"):
+        new_phrase.append("K")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "l"):
+        new_phrase.append("l")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "L"):
+        new_phrase.append("L")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "s"):
+        new_phrase.append("m")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "S"):
+        new_phrase.append("M")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "w"):
+        new_phrase.append("n")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "W"):
+        new_phrase.append("N")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "n"):
+        new_phrase.append("o")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "N"):
+        new_phrase.append("O")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "g"):
+        new_phrase.append("p")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "G"):
+        new_phrase.append("P")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "h"):
+        new_phrase.append("q")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "H"):
+        new_phrase.append("Q")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "d"):
+        new_phrase.append("r")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "D"):
+        new_phrase.append("R")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "f"):
+        new_phrase.append("s")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "F"):
+        new_phrase.append("S")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "y"):
+        new_phrase.append("t")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "Y"):
+        new_phrase.append("T")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "e"):
+        new_phrase.append("u")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "E"):
+        new_phrase.append("U")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "b"):
+        new_phrase.append("v")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "B"):
+        new_phrase.append("V")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "m"):
+        new_phrase.append("w")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "M"):
+        new_phrase.append("W")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "k"):
+        new_phrase.append("x")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "K"):
+        new_phrase.append("X")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "x"):
+        new_phrase.append("y")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "X"):
+        new_phrase.append("Y")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "i"):
+        new_phrase.append("z")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "I"):
+        new_phrase.append("Z")
+        print(new_phrase)
+      print("".join(new_phrase))
+else:
+  for letter in phrase_to_hide:
+    if(letter == " "):
+      if(space_count == 2):
+        space_count = 0
+        new_phrase.append(" ")
+      else:
+        space_count = space_count + 1
+        new_phrase.append(" ")
+      print("space found, space_count is now", space_count)
+    
+    else:
+      if(space_count == 0 and letter == "a"):
+        new_phrase.append("k")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "A"):
+        new_phrase.append("K")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "b"):
+        new_phrase.append("i")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "B"):
+        new_phrase.append("I")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "c"):
+        new_phrase.append("u")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "C"):
+        new_phrase.append("U")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "d"):
+        new_phrase.append("r")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "D"):
+        new_phrase.append("R")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "e"):
+        new_phrase.append("f")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "E"):
+        new_phrase.append("F")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "f"):
+        new_phrase.append("w")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "F"):
+        new_phrase.append("W")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "g"):
+        new_phrase.append("d")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "G"):
+        new_phrase.append("D")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "h"):
+        new_phrase.append("h")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "H"):
+        new_phrase.append("H")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "i"):
+        new_phrase.append("a")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "I"):
+        new_phrase.append("A")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "j"):
+        new_phrase.append("p")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "J"):
+        new_phrase.append("P")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "k"):
+        new_phrase.append("q")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "K"):
+        new_phrase.append("Q")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "l"):
+        new_phrase.append("s")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "L"):
+        new_phrase.append("S")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "m"):
+        new_phrase.append("v")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "M"):
+        new_phrase.append("V")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "n"):
+        new_phrase.append("o")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "N"):
+        new_phrase.append("O")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "o"):
+        new_phrase.append("j")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "O"):
+        new_phrase.append("J")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "p"):
+        new_phrase.append("e")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "P"):
+        new_phrase.append("E")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "q"):
+        new_phrase.append("n")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "Q"):
+        new_phrase.append("N")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "r"):
+        new_phrase.append("b")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "R"):
+        new_phrase.append("B")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "s"):
+        new_phrase.append("t")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "S"):
+        new_phrase.append("T")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "t"):
+        new_phrase.append("l")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "T"):
+        new_phrase.append("L")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "u"):
+        new_phrase.append("g")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "U"):
+        new_phrase.append("G")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "v"):
+        new_phrase.append("m")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "V"):
+        new_phrase.append("M")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "w"):
+        new_phrase.append("c")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "W"):
+        new_phrase.append("C")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "x"):
+        new_phrase.append("y")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "X"):
+        new_phrase.append("Y")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "y"):
+        new_phrase.append("z")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "Y"):
+        new_phrase.append("Z")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "z"):
+        new_phrase.append("x")
+        print(new_phrase)
+      
+      if(space_count == 0 and letter == "Z"):
+        new_phrase.append("X")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "a"):
+        new_phrase.append("u")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "A"):
+        new_phrase.append("U")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "b"):
+        new_phrase.append("q")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "B"):
+        new_phrase.append("Q")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "c"):
+        new_phrase.append("n")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "C"):
+        new_phrase.append("N")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "d"):
+        new_phrase.append("v")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "D"):
+        new_phrase.append("V")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "e"):
+        new_phrase.append("x")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "E"):
+        new_phrase.append("X")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "f"):
+        new_phrase.append("d")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "F"):
+        new_phrase.append("D")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "g"):
+        new_phrase.append("f")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "G"):
+        new_phrase.append("F")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "h"):
+        new_phrase.append("w")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "H"):
+        new_phrase.append("W")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "i"):
+        new_phrase.append("m")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "I"):
+        new_phrase.append("M")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "j"):
+        new_phrase.append("i")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "J"):
+        new_phrase.append("I")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "k"):
+        new_phrase.append("t")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "K"):
+        new_phrase.append("T")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "l"):
+        new_phrase.append("r")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "L"):
+        new_phrase.append("R")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "m"):
+        new_phrase.append("z")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "M"):
+        new_phrase.append("Z")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "n"):
+        new_phrase.append("g")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "N"):
+        new_phrase.append("G")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "o"):
+        new_phrase.append("j")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "O"):
+        new_phrase.append("J")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "p"):
+        new_phrase.append("o")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "P"):
+        new_phrase.append("O")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "q"):
+        new_phrase.append("a")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "Q"):
+        new_phrase.append("A")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "r"):
+        new_phrase.append("l")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "R"):
+        new_phrase.append("L")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "s"):
+        new_phrase.append("h")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "S"):
+        new_phrase.append("H")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "t"):
+        new_phrase.append("b")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "T"):
+        new_phrase.append("B")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "u"):
+        new_phrase.append("y")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "U"):
+        new_phrase.append("Y")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "v"):
+        new_phrase.append("c")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "V"):
+        new_phrase.append("C")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "w"):
+        new_phrase.append("s")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "W"):
+        new_phrase.append("S")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "x"):
+        new_phrase.append("p")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "X"):
+        new_phrase.append("P")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "y"):
+        new_phrase.append("e")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "Y"):
+        new_phrase.append("E")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "z"):
+        new_phrase.append("k")
+        print(new_phrase)
+      
+      if(space_count == 1 and letter == "Z"):
+        new_phrase.append("K")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "a"):
+        new_phrase.append("q")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "A"):
+        new_phrase.append("Q")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "b"):
+        new_phrase.append("r")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "B"):
+        new_phrase.append("R")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "c"):
+        new_phrase.append("u")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "C"):
+        new_phrase.append("U")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "d"):
+        new_phrase.append("t")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "D"):
+        new_phrase.append("T")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "e"):
+        new_phrase.append("o")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "E"):
+        new_phrase.append("O")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "f"):
+        new_phrase.append("v")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "F"):
+        new_phrase.append("V")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "g"):
+        new_phrase.append("a")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "G"):
+        new_phrase.append("A")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "h"):
+        new_phrase.append("j")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "H"):
+        new_phrase.append("J")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "i"):
+        new_phrase.append("c")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "I"):
+        new_phrase.append("C")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "j"):
+        new_phrase.append("p")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "J"):
+        new_phrase.append("P")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "k"):
+        new_phrase.append("z")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "K"):
+        new_phrase.append("Z")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "l"):
+        new_phrase.append("l")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "L"):
+        new_phrase.append("l")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "m"):
+        new_phrase.append("s")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "M"):
+        new_phrase.append("S")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "n"):
+        new_phrase.append("w")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "N"):
+        new_phrase.append("W")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "o"):
+        new_phrase.append("n")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "O"):
+        new_phrase.append("N")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "p"):
+        new_phrase.append("g")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "P"):
+        new_phrase.append("G")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "q"):
+        new_phrase.append("h")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "Q"):
+        new_phrase.append("H")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "r"):
+        new_phrase.append("d")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "R"):
+        new_phrase.append("D")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "s"):
+        new_phrase.append("f")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "S"):
+        new_phrase.append("F")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "t"):
+        new_phrase.append("y")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "T"):
+        new_phrase.append("Y")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "u"):
+        new_phrase.append("e")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "U"):
+        new_phrase.append("E")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "v"):
+        new_phrase.append("b")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "V"):
+        new_phrase.append("B")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "w"):
+        new_phrase.append("m")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "W"):
+        new_phrase.append("M")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "x"):
+        new_phrase.append("k")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "X"):
+        new_phrase.append("K")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "y"):
+        new_phrase.append("x")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "Y"):
+        new_phrase.append("X")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "z"):
+        new_phrase.append("i")
+        print(new_phrase)
+      
+      if(space_count == 2 and letter == "Z"):
+        new_phrase.append("I")
+        print(new_phrase)
+      print("\n")
+      print("".join(new_phrase))
+      print("\n")
+end_time = time.time()
 
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-.hypothesis/
-.pytest_cache/
-cover/
-
-# Translations
-*.mo
-*.pot
-
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
-
-# Flask stuff:
-instance/
-.webassets-cache
-
-# Scrapy stuff:
-.scrapy
-
-# Sphinx documentation
-docs/_build/
-
-# PyBuilder
-.pybuilder/
-target/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# IPython
-profile_default/
-ipython_config.py
-
-# pyenv
-#   For a library or package, you might want to ignore these files since the code is
-#   intended to run in multiple environments; otherwise, check them in:
-# .python-version
-
-# pipenv
-#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
-#   However, in case of collaboration, if having platform-specific dependencies or dependencies
-#   having no cross-platform support, pipenv may install dependencies that don't work, or not
-#   install all needed dependencies.
-#Pipfile.lock
-
-# UV
-#   Similar to Pipfile.lock, it is generally recommended to include uv.lock in version control.
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-#   commonly ignored for libraries.
-#uv.lock
-
-# poetry
-#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-#   commonly ignored for libraries.
-#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
-#poetry.lock
-
-# pdm
-#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
-#pdm.lock
-#   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
-#   in version control.
-#   https://pdm.fming.dev/latest/usage/project/#working-with-version-control
-.pdm.toml
-.pdm-python
-.pdm-build/
-
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
-__pypackages__/
-
-# Celery stuff
-celerybeat-schedule
-celerybeat.pid
-
-# SageMath parsed files
-*.sage.py
-
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# Spyder project settings
-.spyderproject
-.spyproject
-
-# Rope project settings
-.ropeproject
-
-# mkdocs documentation
-/site
-
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
-
-# Pyre type checker
-.pyre/
-
-# pytype static type analyzer
-.pytype/
-
-# Cython debug symbols
-cython_debug/
-
-# PyCharm
-#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
-#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
-#  and can be added to the global gitignore or merged into this file.  For a more nuclear
-#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
-#.idea/
-
-# Ruff stuff:
-.ruff_cache/
-
-# PyPI configuration file
-.pypirc
+print(end_time - start_time)
